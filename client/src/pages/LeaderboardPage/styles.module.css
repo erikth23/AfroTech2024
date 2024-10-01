@@ -1,0 +1,118 @@
+.leaderboardPage {
+  width: calc(100vw - 10px);
+
+  .leaderboardPageContainer {
+    padding: 3rem;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    h1 {
+      margin-top: 2rem;
+    }
+
+    .leaderboardTableContainer {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      overflow-y: auto;
+
+      .leaderboardTable {
+        width: 90%;
+        border-collapse: separate;
+        border-spacing: 0 1em;
+        border-radius: 0.75rem;
+        overflow: hidden;
+
+        thead {
+          th {
+            background-color: var(--Color-Gray-8);
+            color: var(--Color-Gray-2);
+            font-weight: bold;
+            text-align: left;
+            padding: 0.5rem 0.75rem;
+
+            &:first-child {
+              border-radius: 0.75rem 0 0 0;
+            }
+
+            &:last-child {
+              border-radius: 0 0.75rem 0 0;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            background: linear-gradient(90deg, #e9e9e9 0%, #f3f3f3 100%);
+
+            &.topScoreRows {
+              background: linear-gradient(90deg, #ded5ff 0%, #f3d1ff 100%);
+              color: var(--Color-Brand-Dark);
+              font-weight: 500;
+            }
+
+            td {
+              padding: 0.5rem 1rem 0.5rem 0.5rem;
+
+              &:first-child {
+                border-radius: 0.75rem 0 0 0.75rem;
+              }
+
+              &:last-child {
+                border-radius: 0 0.75rem 0.75rem 0;
+              }
+
+              &.scoreTooltip {
+                position: relative;
+                cursor: pointer;
+
+                .totalScore {
+                  display: flex;
+                  justify-content: center;
+                  border-radius: 0.5rem;
+                  background: var(--Color-Gray-2);
+                  padding: 0.5rem 0.5rem;
+                  color: var(--Color-Gray-6);
+                  font-weight: 900;
+
+                  &.topTotalScore {
+                    color: var(--Color-Brand-Dark);
+                    background: #d3c7ff;
+                  }
+                }
+
+                .tooltip {
+                  display: none;
+                  position: absolute;
+                  top: 0%;
+                  left: 70%;
+                  white-space: nowrap;
+                  z-index: 100;
+                  background-color: #000;
+                  color: #fff;
+                  padding: 8px;
+                  border-radius: 8px;
+                }
+
+                &:hover {
+                  .tooltip {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

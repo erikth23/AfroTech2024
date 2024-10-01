@@ -1,0 +1,86 @@
+/* InstructionsModal.module.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modal {
+    background: white;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .closeButton {
+      float: right;
+      border: none;
+      background: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: black;
+    }
+
+    .instructionVideoContainer {
+      background-color: var(--Color-Gray-2);
+      border-radius: 0.75rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: inline-flex;
+      overflow: hidden;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    .rubricCriteria {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .rubricCard {
+        width: 90%;
+        background-color: var(--Color-Gray-2);
+        display: flex;
+        padding: 1.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.25rem;
+        border-radius: 0.5rem;
+
+        .rubricHeading {
+          color: var(--Color-Brand-Medium, #7a5af8);
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.025rem;
+        }
+
+        .definitionLabel,
+        .criteriaLabel {
+          color: var(--Color-Gray-5, #65646b);
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+        }
+
+        .criteria {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.headingNav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 4rem;
+  background-color: white;
+  border-radius: 12px;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  user-select: none;
+  z-index: 25;
+  cursor: default;
+  font-weight: 500;
+  border: 1px solid rgba(102, 112, 133, 0.2);
+  box-shadow: 1px 1px 4px 0px rgba(224, 224, 224, 0.8);
+}

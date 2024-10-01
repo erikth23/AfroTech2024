@@ -1,0 +1,243 @@
+:root {
+  font-family: DM Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--Color-Gray-6, #3e3d44);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Brand colors */
+  --Color-Brand-Dark: #5b3ecc;
+  --Color-Brand-Medium: #7a5af8;
+  --Color-Brand-Light: #b8a6ff;
+
+  /* Grays */
+  --Color-Gray-1: #f8f6fd;
+  --Color-Gray-2: #d9d8df;
+  --Color-Gray-3: #c6c5cc;
+  --Color-Gray-4: #9f9ea5;
+  --Color-Gray-5: #65646b;
+  --Color-Gray-6: #3e3d44;
+  --Color-Gray-7: #1f1e22;
+  --Color-Gray-8: #17161d;
+
+  /* Rank token colors */
+  --Color-Rank-Verystrong: #62d259;
+  --Color-Rank-Strong: #6094f8;
+  --Color-Rank-Average: #fad244;
+  --Color-Rank-Weak: #f59944;
+  --Color-Rank-Veryweak: #fa5d2c;
+
+  /* status colors */
+  --Color-Status-Submitted: #2bdf1c;
+  --Color-Status-Shortlisted: #111bf3;
+  --Color-Status-Received: #fa5d2c;
+}
+
+a {
+  font-weight: 500;
+  color: var(--Color-Brand-Light);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--Color-Brand-Dark);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  /* min-height: 100vh; */
+  height: calc(100vh - 10px);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.05rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.035rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.025rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.025rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.025rem;
+}
+
+p {
+  font-size: 1rem;
+
+  &.smallText {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  &.mediumText {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  &.faded {
+    color: var(--Color-Gray-4, #9f9ea5);
+  }
+}
+
+button {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+
+  &.smallRoundButton {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 1.125rem;
+  }
+
+  &.primary {
+    background: var(--Color-Brand-Medium, #7a5af8);
+
+    &:hover {
+      background-color: var(--Color-Brand-Dark);
+    }
+
+    &:active {
+      background-color: var(--Color-Brand-Dark);
+    }
+  }
+
+  &.secondary {
+    background: white;
+    border: 1px solid var(--Color-Brand-Medium, #7a5af8);
+    color: var(--Color-Brand-Medium, #7a5af8);
+
+    &:hover {
+      border: 1px solid var(--Color-Brand-Dark);
+      color: var(--Color-Brand-Dark);
+    }
+
+    &:active {
+      border: 1px solid var(--Color-Brand-Dark);
+      color: var(--Color-Brand-Dark);
+    }
+  }
+
+  &.size-md {
+    display: flex;
+    padding: 0.75rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--1, 0.5rem);
+  }
+}
+
+.logo {
+  height: 36px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* ~~~~~ Quill rich text input Overrides */
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+.ql-toolbar.ql-snow {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.quill {
+  min-height: 30px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.ql-container {
+  height: auto;
+}
+
+/* ~~~~~ Quill overrides end here */
+
+.css-b62m3t-container {
+  border-radius: var(--borderRadius, 0.25rem);
+  border: 1px solid var(--Color-Gray-5, #65646b);
+}
+
+.css-13cymwt-control {
+  background-color: white;
+  padding: 0.3rem 1rem;
+  width: 430px;
+  border-radius: var(--borderRadius, 0.25rem);
+  border: 1px solid var(--Color-Gray-5, #65646b);
+
+  .css-hlgwow {
+    padding: 0;
+  }
+}
+
+.css-t3ipsp-control {
+  background-color: white;
+  padding: 0.3rem 1rem;
+  width: 430px;
+  border-radius: var(--borderRadius, 0.25rem);
+  border: 1px solid var(--Color-Gray-5, #65646b);
+}
+
+.css-1jqq78o-placeholder {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--Color-Gray-4, #9f9ea5);
+}

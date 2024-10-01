@@ -1,0 +1,92 @@
+.instructionsPage {
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  display: flex;
+
+  .messageSection {
+    width: 45%;
+    padding: 3rem;
+    max-height: 100vh;
+    overflow: auto;
+
+    h1 {
+      margin-top: 2rem;
+    }
+
+    .instructionVideoContainer {
+      background-color: var(--Color-Gray-2);
+      border-radius: 0.75rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      display: inline-flex;
+      overflow: hidden;
+    }
+
+    .timeLimitCard {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+
+      .limitMessage {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .rubricSection {
+    width: 55%;
+    max-height: 100vh;
+    background: #f6f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9rem 5rem;
+    overflow: auto;
+    gap: 2rem;
+
+    .rubricCriteria {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .rubricCard {
+        width: 90%;
+        background-color: white;
+        display: flex;
+        padding: 1.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.25rem;
+        border-radius: 0.5rem;
+
+        .rubricHeading {
+          color: var(--Color-Brand-Medium, #7a5af8);
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.025rem;
+        }
+
+        .definitionLabel,
+        .criteriaLabel {
+          color: var(--Color-Gray-5, #65646b);
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+        }
+
+        .criteria {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

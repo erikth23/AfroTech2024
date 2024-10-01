@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  user-select: none;
+}
+
+.app-styles {
+  height: calc(100svh - 10px);
+  background-image: url("/background-dots.png");
+  background-repeat: repeat;
+  background-size: 50px;
+}

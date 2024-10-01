@@ -1,0 +1,71 @@
+.assessmentsPage {
+  background-color: white;
+  color: black;
+  height: 100vh;
+
+  .activeAssessmentsSection {
+    margin-top: 3rem;
+
+    .assessmentsContainer {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 1.25rem;
+
+      .assessmentInfoCard {
+        border-radius: 0.75rem;
+        background: var(--Color-Gray-7, #e2e2e2);
+        width: 24rem;
+        height: 15rem;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+
+        .cardHeaderSection {
+          display: flex;
+          flex-direction: column;
+
+          .headingRow {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .tag {
+              display: flex;
+              align-items: center;
+              font-size: 0.75rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%;
+              padding: 0.25rem 1.25rem;
+              border-radius: 0.75rem;
+              background: transparent;
+              border: 1px solid var(--Color-Gray-6, #9580eb);
+            }
+          }
+        }
+
+        .cardFooterSection {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: auto;
+
+          .smallRoundButton {
+            display: flex;
+            width: 2rem;
+            height: 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 1.125rem;
+            background-color: #7a5af8;
+          }
+        }
+      }
+    }
+  }
+}

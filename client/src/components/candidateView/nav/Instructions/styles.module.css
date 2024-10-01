@@ -1,0 +1,20 @@
+.instructionsNav {
+  position: fixed;
+  top: 1.5rem;
+  right: 10rem;
+  background-color: white;
+  border-radius: 18px;
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--Color-Brand-Medium);
+  border: 1px solid var(--Color-Brand-Light);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  align-items: center;
+  z-index: 25;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px 0px rgba(224, 224, 224, 0.8);
+}
